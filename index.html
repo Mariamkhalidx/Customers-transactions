@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Transactions</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-light">Customers</h1>
+    <input type="text" class="form-control mb-5 text-white mt-4" id="filter-input" placeholder="Filter by customer name or amount">
+
+    <table id="transactions-table" class="table table-dark table-hover">
+      <thead>
+        <tr class="table-light ">
+          <th>Customer</th>
+          <th>Transaction Amount</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Transaction rows will be inserted here -->
+      </tbody>
+    </table>
+    <canvas id="transaction-chart"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
